@@ -1,0 +1,42 @@
+# include<stdio.h>
+
+int main()
+{	
+int a[6],i,x,pos,y;
+
+	   printf("Enter the element of array:=\n");
+	   
+for(i=0;i<5;i++)
+   {
+   	 scanf("%d",&a[i]);
+   }
+   
+     printf("The array is:=\n",a[i]);
+
+for(i=0;i<5;i++)
+   {
+   	 printf("\n%d",a[i]);
+   }
+   
+     printf("\nEnter value=");
+	 scanf("%d",&x);
+	 printf("\nEnter possition:=");
+	 scanf("%d",&y);
+
+       pos=y;
+   
+   
+for(i=5;i>=pos;i--)
+{
+	a[i]=a[i-1];
+}
+
+	a[pos-1]=x;
+
+for(i=0;i<=5;i++)
+{
+	printf("\n %d",a[i]);
+}
+
+  return 0;
+}
